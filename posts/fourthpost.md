@@ -1,7 +1,7 @@
 ---
 title: David test
 date: 2020-07-06T05:50:38.278Z
-author: John Doe
+author: David Hirtle
 summary: Why contemplating our mortality can be a powerful catalyst for change
 tags:
   - environment
