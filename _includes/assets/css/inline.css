@@ -99,18 +99,9 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul :first-child {
-  margin-left: 0;
-}
-
 header nav li {
   display: inline-block;
-  margin: 0 0.25em;
-}
-
-header nav li a {
-  padding: 0.25em 0.5em;
-  border-radius: 0.25em;
+  margin-right: 1.5em;
 }
 
 header nav li a[href]:not(:hover) {
@@ -118,7 +109,7 @@ header nav li a[href]:not(:hover) {
 }
 
 header nav li a[data-current="current item"] {
-  background-color: white;
+  font-weight: bold;
 }
 
 /* Posts List */
