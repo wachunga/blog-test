@@ -1,13 +1,16 @@
 :root {
-  --primary: blue;
-  --secondary: white;
-  --background: #fff0eb;
+  --primary: #ca2017;
+  --background: white;
+  --grey10: #111;
+  --grey30: #444;
+  --grey80: #ddd;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+  color: var(--grey10);
 }
 
 html,
@@ -122,8 +125,10 @@ header nav li a[data-current="current item"] {
 article {
   margin-bottom: 1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid #eee;
-  border-bottom: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--grey80);
+}
+article:last-of-type {
+  border-bottom: none;
 }
 
 main > section > article > * {
@@ -139,21 +144,23 @@ a[rel="tag"]:visited {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.625em;
+  font-weight: bold;
   padding: 0 0.5em;
   line-height: 2em;
   height: 2em;
-  border: 1px solid var(--secondary);
-  background-color: var(--secondary);
-  color: var(--primary);
+  border: 1px solid var(--grey80);
+  background-color: var(--grey80);
+  color: var(--grey30);
   border-radius: 0.25em;
   text-decoration: none;
   margin: 0 0.5em 0.5em 0;
+  transition: all 0.1s ease-in-out;
 }
 
 a[rel="tag"]:hover {
   border: 1px solid var(--primary);
   background-color: var(--primary);
-  color: var(--secondary);
+  color: white;
 }
 
 a[rel="tag"]:last-child {
@@ -188,7 +195,7 @@ textarea {
 button {
   border: 1px solid var(--primary);
   background-color: var(--primary);
-  color: var(--secondary);
+  color: white;
   cursor: pointer;
 }
 
